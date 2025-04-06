@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://www.youtube.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="logo" onclick="window.location.href='index.html'">
+                <i class="fab fa-youtube youtube-icon"></i>
+                <span class="logo-text">YouTube</span>
+            </div>
+        </div>
+        
+        <div class="header-center">
+            <div class="search-bar">
+                <input type="text" placeholder="Search" class="search-input">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <button class="voice-search-btn"><i class="fas fa-microphone"></i></button>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <button class="create-btn"><i class="fas fa-video"></i></button>
+            <button class="apps-btn"><i class="fas fa-th"></i></button>
+            <button class="notifications-btn">
+                <i class="fas fa-bell"></i>
+                <span class="notification-count">3</span>
+            </button>
+            <div class="user-profile">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Profile" class="profile-pic">
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-compass"></i>
+                <span>Explore</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-bookmark"></i>
+                <span>Subscriptions</span>
+            </div>
+        </div>
+        
+        <div class="sidebar-section">
+            <div class="sidebar-item">
+                <i class="fas fa-play-circle"></i>
+                <span>Library</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-history"></i>
+                <span>History</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-clock"></i>
+                <span>Watch Later</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Liked Videos</span>
+            </div>
+        </div>
+        
+        <div class="sidebar-section">
+            <h3 class="sidebar-title">SUBSCRIPTIONS</h3>
+            <div class="sidebar-item">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" class="channel-icon">
+                <span>Tech Channel</span>
+            </div>
+            <div class="sidebar-item">
+                <img src="https://randomuser.me/api/portraits/women/2.jpg" class="channel-icon">
+                <span>Cooking Channel</span>
+            </div>
+            <div class="sidebar-item">
+                <img src="https://randomuser.me/api/portraits/men/3.jpg" class="channel-icon">
+                <span>Gaming Channel</span>
+            </div>
+            <div class="sidebar-item">
+                <img src="https://randomuser.me/api/portraits/women/4.jpg" class="channel-icon">
+                <span>Music Channel</span>
+            </div>
+        </div>
+        
+        <div class="sidebar-section">
+            <h3 class="sidebar-title">MORE FROM YOUTUBE</h3>
+            <div class="sidebar-item">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube Premium</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-film"></i>
+                <span>Movies</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-gamepad"></i>
+                <span>Gaming</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Categories -->
+        <div class="categories">
+            <button class="category-btn active">All</button>
+            <button class="category-btn">Music</button>
+            <button class="category-btn">Gaming</button>
+            <button class="category-btn">Live</button>
+            <button class="category-btn">Computer Science</button>
+            <button class="category-btn">Podcasts</button>
+            <button class="category-btn">Cooking</button>
+            <button class="category-btn">Recently uploaded</button>
+            <button class="category-btn">Watched</button>
+            <button class="category-btn">New to you</button>
+        </div>
+        
+        <!-- Videos Grid -->
+        <div class="videos-grid">
+            <!-- Video Card 1 - Technology -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://i.ytimg.com/vi/PkZNo7MFNFg/maxresdefault.jpg" alt="Learn JavaScript" class="thumbnail">
+                    <span class="video-duration">10:30</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-icon">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Tech Channel">
+                    </div>
+                    <div class="video-details">
+                        <h3 class="video-title">Learn JavaScript - Full Course for Beginners</h3>
+                        <p class="channel-name">Tech Channel</p>
+                        <p class="video-stats">1.2M views • 3 days ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 2 - Cooking -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://i.ytimg.com/vi/2FSN6YV7PEI/maxresdefault.jpg" alt="Cookie Recipe" class="thumbnail">
+                    <span class="video-duration">15:45</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-icon">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Cooking Channel">
+                    </div>
+                    <div class="video-details">
+                        <h3 class="video-title">5 Easy Dinner Recipes for Busy Weeknights</h3>
+                        <p class="channel-name">Cooking Channel</p>
+                        <p class="video-stats">850K views • 1 week ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 3 - Gaming -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Gaming Review" class="thumbnail">
+                    <span class="video-duration">22:10</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-icon">
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Gaming Channel">
+                    </div>
+                    <div class="video-details">
+                        <h3 class="video-title">New Game Release Review - Is It Worth Buying?</h3>
+                        <p class="channel-name">Gaming Channel</p>
+                        <p class="video-stats">3.4M views • 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 4 - Music -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://i.ytimg.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Music Video" class="thumbnail">
+                    <span class="video-duration">8:15</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-icon">
+                        <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Music Channel">
+                    </div>
+                    <div class="video-details">
+                        <h3 class="video-title">Top Hits of 2023 - Music Mix</h3>
+                        <p class="channel-name">Music Channel</p>
+                        <p class="video-stats">5.7M views • 1 month ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 5 - Tutorial -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://i.ytimg.com/vi/pQN-pnXPaVg/maxresdefault.jpg" alt="CSS Tutorial" class="thumbnail">
+                    <span class="video-duration">12:30</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-icon">
+                        <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Tech Channel">
+                    </div>
+                    <div class="video-details">
+                        <h3 class="video-title">CSS Grid Tutorial - Complete Guide for Beginners</h3>
+                        <p class="channel-name">Tech Channel</p>
+                        <p class="video-stats">450K views • 2 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 6 - Baking -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://i.ytimg.com/vi/7YVZYZeITc8/maxresdefault.jpg" alt="Baking Tutorial" class="thumbnail">
+                    <span class="video-duration">18:22</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-icon">
+                        <img src="https://randomuser.me/api/portraits/women/6.jpg" alt="Cooking Channel">
+                    </div>
+                    <div class="video-details">
+                        <h3 class="video-title">Baking Perfect Cookies - Secret Tips Revealed</h3>
+                        <p class="channel-name">Cooking Channel</p>
+                        <p class="video-stats">1.1M views • 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 7 - Tech Review -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://i.ytimg.com/vi/XqZsoesa55w/maxresdefault.jpg" alt="Tech Review" class="thumbnail">
+                    <span class="video-duration">25:05</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-icon">
+                        <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="Gaming Channel">
+                    </div>
+                    <div class="video-details">
+                        <h3 class="video-title">Game Console Comparison - Which One to Buy?</h3>
+                        <p class="channel-name">Gaming Channel</p>
+                        <p class="video-stats">2.8M views • 5 days ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 8 - Music -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://i.ytimg.com/vi/JGwWNGJdvx8/maxresdefault.jpg" alt="Music Video" class="thumbnail">
+                    <span class="video-duration">4:50</span>
+                </div>
+                <div class="video-info">
+                    <div class="channel-icon">
+                        <img src="https://randomuser.me/api/portraits/women/8.jpg" alt="Music Channel">
+                    </div>
+                    <div class="video-details">
+                        <h3 class="video-title">New Music Video Release - Official Premiere</h3>
+                        <p class="channel-name">Music Channel</p>
+                        <p class="video-stats">8.3M views • 1 day ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Advanced Features Modal -->
+    <div class="modal" id="advancedModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Advanced Features</h2>
+            <div class="feature">
+                <h3>Dark Mode</h3>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="feature">
+                <h3>Playback Speed</h3>
+                <select id="playbackSpeed">
+                    <option value="0.5">0.5x</option>
+                    <option value="0.75">0.75x</option>
+                    <option value="1" selected>Normal</option>
+                    <option value="1.25">1.25x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2">2x</option>
+                </select>
+            </div>
+            <div class="feature">
+                <h3>Video Quality</h3>
+                <select id="videoQuality">
+                    <option value="auto">Auto</option>
+                    <option value="144">144p</option>
+                    <option value="240">240p</option>
+                    <option value="360">360p</option>
+                    <option value="480">480p</option>
+                    <option value="720">720p HD</option>
+                    <option value="1080">1080p HD</option>
+                    <option value="1440">1440p QHD</option>
+                    <option value="2160">2160p 4K</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
